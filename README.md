@@ -17,6 +17,7 @@ To test the trained model, use the following command:
 CUDA_VISIBLE_DEVICES=0 python main.py --model_name rain_100L --mode test --data_dir ./Datasets/rain/rain_100L --test_model ./pkl/rain_100.pkl --save_image True
 ```
 
+
 ## Inference
 
 For quick inference using the trained model, use the following command:
@@ -24,6 +25,7 @@ For quick inference using the trained model, use the following command:
 ```bash
 CUDA_VISIBLE_DEVICES=0 python demo.py --model_path ./pkl/rain_100.pkl --image_path ./Datasets/rain/rain_100L/test/img/rain-001.png --save_dir ./demo_output
 ```
+
 
 ## Evaluation
 
