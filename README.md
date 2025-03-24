@@ -24,3 +24,7 @@ For quick inference using the trained model, use the following command:
 ```bash
 CUDA_VISIBLE_DEVICES=0 python demo.py --model_path ./pkl/rain_100.pkl --image_path ./Datasets/rain/rain_100L/test/img/rain-001.png --save_dir ./demo_output
 ```
+
+## Evaluation
+
+After training and testing the model, you can evaluate the performance of the rain streak removal on the test images. We follow previous work by evaluating the model in the YCbCr color space. The evaluation code is provided in the MATLAB script `metrics_matlab.m`, which computes the PSNR and SSIM metrics in the YCbCr color space.
