@@ -14,7 +14,7 @@ CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node 1 --u
 To test the trained model, use the following command:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python main.py --model_name rain_100L --mode test --data_dir ./Datasets/rain/rain_100L --test_model ./pkl/rain_100.pkl --save_image True
+CUDA_VISIBLE_DEVICES=0 python main.py --model_name rain_100L --mode test --data_dir ./Datasets/rain/rain_100L --test_model ./pkl/rain_100L.pkl --save_image True
 ```
 
 
@@ -23,7 +23,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py --model_name rain_100L --mode test --data_
 For quick inference using the trained model, use the following command:
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python demo.py --model_path ./pkl/rain_100.pkl --image_path ./Datasets/rain/rain_100L/test/img/rain-001.png --save_dir ./demo_output
+CUDA_VISIBLE_DEVICES=0 python demo.py --model_path ./pkl/rain_100L.pkl --image_path ./Datasets/rain/rain_100L/test/img/rain-001.png --save_dir ./demo_output
 ```
 
 
